@@ -13,10 +13,10 @@ let arrayFavoritos = [];
 // 3_ petición a la API
 const getPokemons = async () => {
     const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon/?offset=20&limit=150"
+        "https://pokeapi.co/api/v2/pokemon/?limit=151"
     );
     const data = await response.json();
-
+        console.log(data);
     for (const eachElement of data.results) {
         const res = await fetch(eachElement.url);
         const eachPokemon = await res.json();
@@ -113,9 +113,6 @@ const handlerBtn = (pokemon) => {
         //si el id ya se encuentra adentro del array, sácalo
         arrayFavoritos.splice(findPosition, 1);
     }
-// 11_ añadimos el array de favoritos al local Storage
-    localStorage.setItem("pokemonsFavoritos", JSON.stringify(arrayFavoritos));
-
     renderFavoritos();
     //console.log(arrayFavoritos);
     return arrayFavoritos;
@@ -155,7 +152,7 @@ const renderFavoritos = () => {
 // 4 _ función PRINCIPAL
 const main = async () => {
     const pokemons = await getPokemons(); //llamada a la F que contiene los pokemons
-    //console.log(pokemons);
+    console.log(pokemons);
     const mappedpokemons = mapPokemons(pokemons);
     //console.log(mappedpokemons);
     renderPokemons(mappedpokemons);

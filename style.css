@@ -97,6 +97,8 @@ button {
     border-radius: 20px;
     border: brown 2px solid;
     background-color: rgba(239, 214, 75, 0.939);
+    display: flex;
+    align-items: center;
 }
 
 #favorite-list {
