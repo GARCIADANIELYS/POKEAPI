@@ -97,13 +97,35 @@ button {
     border-radius: 20px;
     border: brown 2px solid;
     background-color: rgba(239, 214, 75, 0.939);
-    display: flex;
-    align-items: center;
 }
 
 #favorite-list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.card-favorite {
+    width: 120px;
+    list-style: none;
+    padding: 10px;
+    border: 2px rgba(137, 68, 2, 0.597) solid;
+    background-color: #f8e1a0ce;
+    border-radius: 20px;
+    color: #222;
+    text-align: center;
+}
+.card-title-favorite {
+    text-decoration: overline;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(103, 101, 101);
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.card-subtitle-favorite {
+    font-weight: bold;
+    margin-top: 1px;
 }
 
 .card:hover {

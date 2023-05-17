@@ -126,12 +126,12 @@ const renderFavoritos = () => {
 
     for (const pokemon of arrayFavoritos) {
         const li = document.createElement("li");
-        li.setAttribute("class", "card");
+        li.setAttribute("class", "card-favorite");
         favoriteList.appendChild(li);
 
         const pokeName = document.createElement("p");
         pokeName.textContent = pokemon.name;
-        pokeName.setAttribute("class", "card-title");
+        pokeName.setAttribute("class", "card-title-favorite");
         li.appendChild(pokeName);
 
         const image = document.createElement("img");
@@ -140,13 +140,9 @@ const renderFavoritos = () => {
         image.setAttribute("class", "card-image");
         li.appendChild(image);
 
-        const pokeType = document.createElement("p");
-        pokeType.textContent = pokemon.type;
-        li.appendChild(pokeType);
-
         const pokeId = document.createElement("p");
         pokeId.textContent = "POKEID: " + pokemon.id;
-        pokeId.setAttribute("class", "card-subtitle");
+        pokeId.setAttribute("class", "card-subtitle-favorite");
         li.appendChild(pokeId);
     }
 
