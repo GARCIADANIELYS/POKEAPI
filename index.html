@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>| Pokedex |</h1>
+
+    <section>
+        <h3>FAVORITOS</h3> 
+        <div class="favorite-section">
+            <ol id="favorite-list"></ol>
+        </div>
+
+    </section>
+
+    <form class="form">
+        <input type="text" id="inputsearch" placeholder="busca tu Pokemon">
+    </form>
+
+    <div class="container">
+        <ol id="pokedex"></ol>
+    </div>
+    <script src="./pokedex.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+1.- cuando el usuario escriba en el input para filtrar,  
+debe visualizarse solo los pokemons que contengan en el nombre lo que ha escrito el usuario.
+2.- Crear un array de favoritos,  
+al hacer click sobre algun pokemon, 
+añadirlo a este array de  favoritos, 
+3.- crear una nueva sección de HTML donde pueda ver los pokemons que se encuentran dentro del array  de favoritos
+4.- Si se hace click sobre un pokemon que ya se encuentra del array de favoritos, 
+este debe eliminarse  de ese listado.
+
+- crear el HTML
+    · crear un formulario con el input en donde el usuario escribirá los nombres de los pokemons
+- llevarme los elementos del HTML a JS
+- hacer la petición a la API
+· hacer el fetch
+· hacer el primer await
+· hacer el await final que me devuelve los datos de la API
+- crear una lista en el HTML desde JS que se va a rellenar con los pokemons que nos devolvió la API
+- crear un array donde guardar los pokemons que queremos pintar en pantalla y pasarlos al html
+    · crear una función que haga este proceso
+- 
+- 
+
+-->

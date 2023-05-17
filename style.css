@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-image: url(./img/pokemon\ background.jpeg);
+    background-size: auto;
+    background-position: center;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form {
+    display: flex;
+    justify-content: flex-start;
+    margin-block-start: 30px;
+    margin-left: 30px;
+}
+
+#inputsearch {
+    border: rgb(255, 176, 176) solid 1px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: rgb(25, 2, 4);
+    text-align: center;
+    font-size: 54px;
+    cursor: pointer;
+    background-color: rgba(245, 245, 220, 0.609);
+    border-radius: 15px;
+}
+
+h3 {
+    color: rgba(23, 2, 4, 0.893);
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#pokedex {
+    margin: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 40px;
+}
+
+.card {
+    width: 150px;
+    list-style: none;
+    padding: 30px;
+    border: 2px rgba(137, 68, 2, 0.597) solid;
+    background-color: #f8e1a0ce;
+    border-radius: 20px;
+    color: #222;
+    text-align: center;
+}
+
+.card-title {
+    text-decoration: overline;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.card-subtitle {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.favorite-section {
+    width: auto;
+    height: 400px;
+    margin: 0 20px 45px;
+    border-radius: 20px;
+    border: brown 2px solid;
+    background-color: rgba(239, 214, 75, 0.939);
+}
+
+#favorite-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    60% {
+        transform: translateY(-2px);
+    }
+
+    80% {
+        transform: translateY(-0px);
+    }
+}
