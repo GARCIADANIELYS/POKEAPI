@@ -113,6 +113,8 @@ const handlerBtn = (pokemon) => {
         //si el id ya se encuentra adentro del array, sácalo
         arrayFavoritos.splice(findPosition, 1);
     }
+// 11_ añadimos el array de favoritos al local Storage
+    localStorage.setItem("pokemonsFavoritos", JSON.stringify(arrayFavoritos));
 
     renderFavoritos();
     //console.log(arrayFavoritos);
